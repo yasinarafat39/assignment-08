@@ -17,7 +17,6 @@ const BdCricketClub = () => {
 
 
     const handleExerciseTime = (player) => {
-        console.log( typeof player.TimeRequired);
         const newExerciseTime = exerciseTime + parseInt(player.TimeRequired);
         setExerciseTime(newExerciseTime);
     }

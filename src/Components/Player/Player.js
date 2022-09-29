@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Player = (props) => {
-    console.log(props.handleExerciseTime);
+    
     const { name, id, picture, age, TimeRequired } = props.player;
 
     return (
