@@ -14,7 +14,7 @@ const Player = (props) => {
 
             </div>
             <div>
-                <button className='w-full py-1 px-1 rounded bg-green-400 text-white absolute bottom-0'>Add to list</button>
+                <button className='w-full py-1 px-1 rounded-b-lg bg-green-400 text-white absolute bottom-0'>Add to list</button>
             </div>
         </div>
 
