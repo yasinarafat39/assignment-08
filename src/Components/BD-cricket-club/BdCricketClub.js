@@ -24,7 +24,7 @@ const BdCricketClub = () => {
 
     return (
 
-        < div className='Bd-cricket-club sm:flex sm:flex-col-reverse' >
+        < div className='Bd-cricket-club' >
 
             <div className="player-container px-12 bg-green-50">
                 <div className=' pt-7 mb-5' >

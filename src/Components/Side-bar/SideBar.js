@@ -38,7 +38,7 @@ const SideBar = ({ exerciseTime }) => {
         <div className='sticky top-0'>
             {/* Add a break section  */}
 
-            <h2 className='text-center'><span className='text-lg font-bold text-center text-green-400'>Yasin Arafat</span> <p className='  text-xs'>Kishoreganj, Dhaka.</p></h2>
+            <h2 className='text-center'><span className='text-xl font-bold text-center text-green-400'>Yasin Arafat</span> <p className='  text-xs'>Kishoreganj, Dhaka.</p></h2>
             <div>
                 <h2 className='text-lg font-semibold mt-3 mb-4'>Add A Break</h2>
                 <div className='bg-green-50 p-2 rounded grid lg:grid-cols-5 gap-3'>

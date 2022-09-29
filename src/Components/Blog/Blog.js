@@ -17,7 +17,7 @@ const Blog = () => {
                     The state represents parts of an Application that can change. Each component can have its State. The state is Mutable and it is local to the component only.
                 </p>
             </div>
-            <div>
+            <div className='mb-12'>
                 <p className='text-lg font-semibold mt-8'>3. Basically what is the purpose of useState without data loading?</p>
                 <p>The useState() is a Hook that allows you to have state variable in functional components. So basically useState is the ability to encapsulate local state in a functional component.
                 </p>
