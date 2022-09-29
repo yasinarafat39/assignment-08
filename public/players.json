@@ -5,6 +5,7 @@
     "picture": "https://p.imgci.com/db/PICTURES/CMS/223900/223989.6.jpg",
     "age": 38,
     "name": "Mashrafe Mortaza",
+    "TimeRequired": "20",
     "greeting": "Hello, Mashrafe Mortaza! You have 5 unread messages."
   },
   {
@@ -13,6 +14,7 @@
     "picture": "https://images.newindianexpress.com/uploads/user/imagelibrary/2020/12/27/w1200X800/Shakib_Al_Hasan_ICCs_ODI_Team_Of_The_Decade_PTI.jpg",
     "age": 35,
     "name": "Shakib Al Hasan",
+    "TimeRequired": "25",
     "greeting": "Hello, Shakib Al Hasan! You have 5 unread messages."
   },
   {
@@ -21,6 +23,7 @@
     "picture": "https://www.thestatesman.com/wp-content/uploads/2019/06/Tamim-Iqbal.jpg",
     "age": 33,
     "name": "Tamim Iqbal",
+    "TimeRequired": "35",
     "greeting": "Hello, Tamim Iqbal! You have 2 unread messages."
   },
   {
@@ -29,6 +32,7 @@
     "picture": "https://admin.dailycricket.com.bd/storage/posts/1029/Riyad.jpg",
     "age": 36,
     "name": "Mahmudullah Riyad",
+    "TimeRequired": "28",
     "greeting": "Hello, Mahmudullah Riyad! You have 3 unread messages."
   },
   {
@@ -37,6 +41,7 @@
     "picture": "https://www.cricket.com.au/-/media/News/2017/08/22fizz.ashx",
     "age": 27,
     "name": "Mustafizur Rahman",
+    "TimeRequired": "41",
     "greeting": "Hello, Mustafizur Rahman! You have 4 unread messages."
   },
   {
@@ -45,6 +50,7 @@
     "picture": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_800,q_50/lsci/db/PICTURES/CMS/208100/208185.3.jpg",
     "age": 30,
     "name": "Rubel Hossain",
+    "TimeRequired": "22",
     "greeting": "Hello, Rubel Hossain! You have 6 unread messages."
   }
 ]
