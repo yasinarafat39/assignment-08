@@ -39,7 +39,7 @@ const BdCricketClub = () => {
                     {
                         players.map(player => <Player 
                             player={player} 
-                            key={player.id} 
+                            key={player._id} 
                             handleExerciseTime={handleExerciseTime}
                             ></Player>)
                     }
