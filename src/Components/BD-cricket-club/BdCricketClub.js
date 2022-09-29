@@ -44,7 +44,20 @@ const BdCricketClub = () => {
                         <h5 className='bg-white rounded-full p-2 text-xs font-semibold hover:bg-green-400 hover:text-white cursor-pointer transition duration-400 text-center'>50s</h5>
                     </div>
                 </div>
+                
+                {/* Exercise Details section added */}
+                <div>
+                    <h2 className='text-xl font-semibold mt-3 mb-4'>Exercise Details</h2>
+                    <div className='bg-green-50 rounded p-3 mb-4'>
+                        <p className='text-sm font-semibold'>Exercise time</p>
+                        <p><small> </small></p>
+                    </div>
+                    <div className='bg-green-50 rounded p-3'>
+                        <p className='text-sm font-semibold'>Break time</p>
+                        <p><small> </small></p>
+                    </div>
 
+                </div>
     
             </div>
         </div >
