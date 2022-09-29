@@ -13,10 +13,11 @@ const BdCricketClub = () => {
 
     return (
 
-        < div className='Bd-cricket-club' >
+        
+        < div className='Bd-cricket-club sm:flex sm:flex-col-reverse' >
 
-            <div className="player-container px-12 border bg-green-50">
-                <div className='border pt-7 mb-5' >
+            <div className="player-container px-12 bg-green-50">
+                <div className=' pt-7 mb-5' >
                     <div className='flex items-center mb-1'>
                         <img src={logo} alt="" width='50px' height='70px' />
                         <h2 className='text-green-400 text-2xl font-bold'>BD CRICKET CLUB</h2>
@@ -45,7 +46,7 @@ const BdCricketClub = () => {
                     </div>
                 </div>
                 
-                {/* Exercise Details section added */}
+                {/* Exercise Details section */}
                 <div>
                     <h2 className='text-xl font-semibold mt-3 mb-4'>Exercise Details</h2>
                     <div className='bg-green-50 rounded p-3 mb-4'>
