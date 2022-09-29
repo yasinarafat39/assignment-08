@@ -14,14 +14,22 @@ const SideBar = ({ exerciseTime }) => {
             .then(data => setBreakTime(data))
     }, []);
 
-    
+
     const [breakSecond, setBreakSecond] = useState(0);
 
-     
+
     const addBreakTime = (second) => {
+        
+        const storedSeconds = localStorage.getItem('seconds');
+        if (storedSeconds) {
+            second = JSON.parse(storedSeconds);
+        }
         setBreakSecond(second);
-        console.log('second clicked')
+
+        localStorage.setItem('seconds', JSON.stringify(second))
     }
+
+    
 
     return (
         <div className='sticky top-0'>
@@ -35,7 +43,7 @@ const SideBar = ({ exerciseTime }) => {
                     }
                 </div>
 
-                
+
 
             </div>
 
