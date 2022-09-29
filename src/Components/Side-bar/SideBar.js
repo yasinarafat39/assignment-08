@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import BreakSecond from '../BreakSecond/BreakSecond';
 import './SideBar.css';
+import Swal from 'sweetalert2'
 
 const SideBar = ({ exerciseTime }) => {
 
@@ -19,13 +20,19 @@ const SideBar = ({ exerciseTime }) => {
 
 
     const addBreakTime = (second) => {
-        
+
         setBreakSecond(second);
         localStorage.setItem('seconds', JSON.stringify(second))
 
     }
 
-    
+    const sweetAlert = () => {
+        Swal.fire(
+            'Good job!',
+            'Activity Completed!',
+            'success'
+        )
+    }
 
     return (
         <div className='sticky top-0'>
@@ -43,8 +50,8 @@ const SideBar = ({ exerciseTime }) => {
 
 
             </div>
-            
-          
+
+
             <h2 className='text-lg font-semibold mt-12 mb-4'>Exercise Details</h2>
 
             {/* Exercise Time */}
@@ -58,7 +65,7 @@ const SideBar = ({ exerciseTime }) => {
                 <p><small className='text-gray-400'> {breakSecond} seconds</small></p>
             </div>
 
-            <button className='w-full py-2 px-1 mt-12 rounded-lg bg-green-400 text-white'>Activity Completed</button>
+            <button onClick={sweetAlert} className='w-full py-2 px-1 mt-12 rounded-lg bg-green-400 text-white'>Activity Completed</button>
         </div>
     );
 };
