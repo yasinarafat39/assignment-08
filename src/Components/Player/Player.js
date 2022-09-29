@@ -2,6 +2,7 @@
 import React from 'react';
 
 const Player = (props) => {
+    console.log(props.handleExerciseTime);
     const { name, id, picture, age, TimeRequired } = props.player;
 
     return (
@@ -15,9 +16,9 @@ const Player = (props) => {
 
             </div>
             <div>
-                <button className='w-full py-1 px-1 rounded-b-lg bg-green-400 text-white absolute bottom-0'>Add to list</button>
+                <button onClick={() => props.handleExerciseTime(props.player)} className='w-full py-1 px-1 rounded-b-lg bg-green-400 text-white absolute bottom-0'>Add to list</button>
             </div>
-            
+
         </div>
 
     );

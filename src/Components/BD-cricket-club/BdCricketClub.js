@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import logo from '../../cricket-bd-logo.png';
 import Blog from '../Blog/Blog';
 import Player from '../Player/Player';
+import SideBar from '../Side-bar/SideBar';
 import './BdCricketClub.css';
 
 const BdCricketClub = () => {
@@ -15,8 +16,12 @@ const BdCricketClub = () => {
     }, []);
 
 
-        
-    
+    const handleExerciseTime = (player) => {
+        console.log( typeof player.TimeRequired);
+        const newExerciseTime = exerciseTime + parseInt(player.TimeRequired);
+        setExerciseTime(newExerciseTime);
+    }
+
 
     return (
 
@@ -33,7 +38,11 @@ const BdCricketClub = () => {
 
                 <div className='grid gap-4 lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2'>
                     {
-                        players.map(player => <Player player={player} key={player.id}></Player>)
+                        players.map(player => <Player 
+                            player={player} 
+                            key={player.id} 
+                            handleExerciseTime={handleExerciseTime}
+                            ></Player>)
                     }
                 </div>
                 <Blog></Blog>
@@ -41,39 +50,14 @@ const BdCricketClub = () => {
 
 
             <div className="side-bar p-3">
-                {/* Add a break section  */}
+
+                {/* Exercise Details section/ sideBar */}
                 <div>
-                    <h2 className='text-xl font-semibold mt-3 mb-4'>Add A Break</h2>
-                    <div className='bg-green-50 p-2 rounded grid lg:grid-cols-5 gap-3'>
-                        <h5 className='bg-white rounded-full p-2 text-xs font-semibold hover:bg-green-400 hover:text-white cursor-pointer transition duration-400 text-center'>10s</h5>
-                        <h5 className='bg-white rounded-full p-2 text-xs font-semibold hover:bg-green-400 hover:text-white cursor-pointer transition duration-400 text-center'>20s</h5>
-                        <h5 className='bg-white rounded-full p-2 text-xs font-semibold hover:bg-green-400 hover:text-white cursor-pointer transition duration-400 text-center'>30s</h5>
-                        <h5 className='bg-white rounded-full p-2 text-xs font-semibold hover:bg-green-400 hover:text-white cursor-pointer transition duration-400 text-center'>40s</h5>
-                        <h5 className='bg-white rounded-full p-2 text-xs font-semibold hover:bg-green-400 hover:text-white cursor-pointer transition duration-400 text-center'>50s</h5>
-                    </div>
-                </div>
-
-
-                {/* Exercise Details section */}
-                <div>
-                    <h2 className='text-xl font-semibold mt-3 mb-4'>Exercise Details</h2>
-
-                    {/* Exercise Time */}
-                    <div className='bg-green-50 rounded p-3 mb-4'>
-                        <p className='text-sm font-semibold'>Exercise time</p>
-                        <p><small> </small></p>
-                    </div>
-                    {/* Break time */}
-                    <div className='bg-green-50 rounded p-3'>
-                        <p className='text-sm font-semibold'>Break time</p>
-                        <p><small> </small></p>
-                    </div>
-
+                    <SideBar exerciseTime={exerciseTime}></SideBar>
                 </div>
 
             </div>
 
-            
         </div >
     );
 }
